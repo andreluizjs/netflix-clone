@@ -1,0 +1,198 @@
+:root{
+    --preto:#141414;
+    --branco: #F3F3F3;
+    --dark:#686868;
+}
+
+*{ 
+    box-sizing: border-box;
+}
+
+/* Elemento base*/
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background: var(--preto);
+    font-family: 'Arial', Times;
+    color: var(--branco);
+}
+
+.container{
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.2) 20%,
+        rgba(20,20,20,0.2) 80%,
+        rgba(20,20,20,1)100%
+        ),
+        url("../img/capa.png");
+        background-size: cover;
+        padding: 0;
+}
+
+.hero{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+  /* HEADER */
+
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 5.8rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left,
+.menu-right{
+    display: flex;
+    color: white;
+    font-size: .87rem;  
+}
+
+.menu ul{
+    display:flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li{
+    padding-right: .9rem;
+}
+
+.menu ul{
+    display:flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 5px;  
+}
+  
+.menu a:hover {
+    color: var(--dark);
+}
+  
+
+.menu .user img{
+    width: 2rem;
+    margin-right: .5rem;
+}
+
+.menu .user{
+    display: flex;
+    align-items: center;
+}
+
+.menu i{
+    font-size: 20px;
+}
+
+.menu-right ul li{
+   padding-right: 1.5rem; 
+}
+
+
+.banner{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.banner .poster{
+    width: 450px;
+}
+
+.banner .descricao{
+    font-size: 1.25rem;
+    color:var(--branco);
+    line-height: 1.25;
+    padding-top: .5rem;
+}
+
+.botao{
+    margin-top: 2rem;
+}
+
+.botao .btn-assistir{
+    background-color: rgba(240, 240, 240, 0.9);
+    border: none;
+    color: var(--preto);
+    padding: 0.6rem 2rem;
+    margin-right: .75rem;
+    font-weight: 400;
+    border-radius: 0.125rem;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.btn-info{
+    background-color: rgba(51, 51, 51, 0.4);
+    border: none;
+    color: var(--branco);
+    padding: 0.6rem 2rem;
+    margin-right: .75rem;
+    font-weight: 400;
+    border-radius: 0.125rem;
+    font-family: inherit;
+    font-size: 100%;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao .btn i{
+    margin-right: 0.5rem;
+}
+
+ /* MAIN CONTIANER */
+ .main-container {
+    padding: 50px;
+  }
+
+
+.category{
+    height: 200px;
+}
+
+.category span{
+    color: var(--branco);
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+.slider{
+    margin-top: .8rem;
+    display: flex;
+    position: absolute;
+    left: 3.75rem;
+    right: 0;
+}
+
+
+.slider img{
+    max-width: 100%;
+    padding-right: 5px;
+}
+
